@@ -1,4 +1,4 @@
-package BOJ;
+package leejh;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -25,7 +25,7 @@ public class BOJ_2437 {
 		else {
 			int sum = 0; // 현재까지 만들 수 있는 최댓값
 			for (int i = 0; i < N; i++) {
-				if (arr[i] > sum + 1) break; // 현재까지 만들 수 있는 최댓값보다 현재 추가 2이상 클 경우 sum+1 무게부터 측정 불가
+				if (arr[i] > sum + 1) break; // 기저조건 : 현재까지 만들 수 있는 최댓값보다 현재 추가 2이상 클 경우 sum+1 무게부터 측정 불가
 				sum += arr[i];
 			}
 			bw.write(String.valueOf(sum + 1));

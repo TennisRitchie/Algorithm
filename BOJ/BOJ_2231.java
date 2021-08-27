@@ -1,4 +1,4 @@
-package BOJ;
+package leejh;
 
 import java.util.Scanner;
 
